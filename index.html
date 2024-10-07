@@ -3,29 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat Grupal</title>
+    <title>Chat Simulado</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="chat-container">
-        <div class="chat-window" id="chat-window">
-    
+        <div class="chat-box" id="chat-box">
+         
         </div>
-
-        <div class="chat-inputs">
-            <form class="input-container" id="formUser1">
-                <input type="text" id="messageInput1" placeholder="Mensaje usuario uno" />
-                <button type="submit">Enviar</button>
-            </form>
-            <form class="input-container" id="formUser2">
-                <input type="text" id="messageInput2" placeholder="Mensaje usuario dos" />
-                <button type="submit">Enviar</button>
-            </form>
+        <div class="input-container">
+            <input type="text" id="user1-message" placeholder="Mensaje usuario uno">
+             <button id="azul" class="botonazul" onclick="sendMessage('user1')">Enviar</button>
+        </div>
+        <div class="input-container">
+            <input type="text" id="user2-message" placeholder="Mensaje usuario dos">
+            <button id="rojo" class="botonrojo" onclick="sendMessage('user2')">Enviar</button>
         </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
-
-
